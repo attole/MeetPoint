@@ -1,0 +1,90 @@
+/* Base styles and resets for HTML elements */
+
+html {
+  font: var(--mat-sys-body-large-font);
+  color: var(--mat-sys-on-background);
+}
+
+body {
+  background-color: var(--mat-sys-background) !important;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+label,
+p {
+  color: var(--mat-sys-on-background);
+  margin: 0;
+}
+
+h1 {
+  font: var(--mat-sys-headline-large);
+}
+
+h2 {
+  font: var(--mat-sys-headline-medium);
+}
+
+h3 {
+  font: var(--mat-sys-headline-small);
+}
+
+h4 {
+  font: var(--mat-syst-title-large);
+}
+
+h5 {
+  font: var(--mat-sys-title-medium);
+}
+
+h6 {
+  font: var(--mat-syst-title-small);
+}
+
+label {
+  font: var(--mat-sys-label-medium);
+}
+
+p {
+  font: var(--mat-sys-body-medium);
+}
+
+small {
+  font: var(--mat-sys-body-small);
+}
+
+a {
+  color: var(--mat-sys-primary);
+  font: var(--mat-sys-body-medium);
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    color: var(--mat-sys-primary-container);
+  }
+
+  &:focus-visible {
+    outline: 2px solid var(--mat-sys-primary-container);
+    outline-offset: 2px;
+  }
+}
+
+//use something like normalize.css later??

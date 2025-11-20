@@ -1,0 +1,62 @@
+/* Global element styles for pseudo-classes */
+
+.cdk-overlay-backdrop {
+  backdrop-filter: blur(5px);
+  background-color: rgba(0, 0, 0, 0.3); /* semi-transparent */
+}
+
+mat-grid-tile .card-section {
+  height: calc(100% - 2px);
+  width: calc(100% - 2px);
+}
+
+.card-section {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  outline: 1px solid var(--mat-sys-outline);
+}
+
+.dialog {
+  .mat-mdc-dialog-title {
+    text-align: center;
+  }
+
+  .mat-mdc-dialog-content {
+    display: flex;
+    flex-direction: column;
+    overflow-y: hidden;
+  }
+
+  .mat-mdc-dialog-surface {
+    outline: 1px solid var(--mat-sys-outline) !important;
+  }
+
+  .mat-mdc-form-field {
+    width: 100%;
+  }
+}
+
+.header-split {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.clickable:hover {
+  color: var(--mat-sys-primary);
+}
+
+.profile-pic {
+  max-height: 100%;
+  max-width: 100%;
+  aspect-ratio: 1 / 1;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}

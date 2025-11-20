@@ -1,0 +1,99 @@
+/* Main style is material component, so some copy styles defined there */
+
+.dialog-alike {
+  .container {
+    color: var(
+      --mat-dialog-subhead-color,
+      var(--mat-sys-on-surface, rgba(0, 0, 0, 0.87))
+    );
+    font-family: var(
+      --mat-dialog-subhead-font,
+      var(--mat-sys-headline-small-font, inherit)
+    );
+    line-height: var(
+      --mat-dialog-subhead-line-height,
+      var(--mat-sys-headline-small-line-height, 1.5rem)
+    );
+    font-size: var(
+      --mat-dialog-subhead-size,
+      var(--mat-sys-headline-small-size, 1rem)
+    );
+    font-weight: var(
+      --mat-dialog-subhead-weight,
+      var(--mat-sys-headline-small-weight, 400)
+    );
+    letter-spacing: var(
+      --mat-dialog-subhead-tracking,
+      var(--mat-sys-headline-small-tracking, 0.03125em)
+    );
+    display: block;
+    position: relative;
+    flex-shrink: 0;
+    box-sizing: border-box;
+    margin: 0 0 1px;
+  }
+
+  .header {
+    color: var(
+      --mat-dialog-subhead-color,
+      var(--mat-sys-on-surface, rgba(0, 0, 0, 0.87))
+    );
+    font-family: var(
+      --mat-dialog-subhead-font,
+      var(--mat-sys-headline-small-font, inherit)
+    );
+    line-height: var(
+      --mat-dialog-subhead-line-height,
+      var(--mat-sys-headline-small-line-height, 1.5rem)
+    );
+    font-size: var(
+      --mat-dialog-subhead-size,
+      var(--mat-sys-headline-small-size, 1rem)
+    );
+    font-weight: var(
+      --mat-dialog-subhead-weight,
+      var(--mat-sys-headline-small-weight, 400)
+    );
+    letter-spacing: var(
+      --mat-dialog-subhead-tracking,
+      var(--mat-sys-headline-small-tracking, 0.03125em)
+    );
+    display: block;
+    position: relative;
+    flex-shrink: 0;
+    box-sizing: border-box;
+    margin: 0 0 1px;
+    padding: 20px 24px 13px;
+  }
+
+  .content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow-y: hidden;
+    padding: 0 24px;
+  }
+
+  .mat-mdc-form-field {
+    width: 100%;
+  }
+
+  .actions {
+    display: flex;
+    position: relative;
+    flex-shrink: 0;
+    flex-wrap: wrap;
+    align-items: center;
+    box-sizing: border-box;
+    min-height: 52px;
+    margin: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0);
+    padding: var(--mat-dialog-actions-padding, 16px 24px);
+    justify-content: var(--mat-dialog-actions-alignment, flex-end);
+
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    gap: 8px;
+  }
+}

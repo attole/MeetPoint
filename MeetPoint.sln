@@ -1,0 +1,48 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{237F8066-3B4E-4FDC-A9E2-CD83BF3FBBF0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MeetPoint.API", "src\MeetPoint.API\MeetPoint.API.csproj", "{C8E022FB-3C97-498C-B5D4-BCCB70665663}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MeetPoint.Application", "src\MeetPoint.Application\MeetPoint.Application.csproj", "{DCC55B89-E350-4478-A86A-C83E5E660B45}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MeetPoint.Domain", "src\MeetPoint.Domain\MeetPoint.Domain.csproj", "{124FC5BC-C1EB-4D61-A435-4EFBFE3D37FC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MeetPoint.Infrastructure", "src\MeetPoint.Infrastructure\MeetPoint.Infrastructure.csproj", "{49E4A8F0-1ED3-4B4D-9846-9BDFEBBF3345}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C8E022FB-3C97-498C-B5D4-BCCB70665663}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C8E022FB-3C97-498C-B5D4-BCCB70665663}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C8E022FB-3C97-498C-B5D4-BCCB70665663}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C8E022FB-3C97-498C-B5D4-BCCB70665663}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DCC55B89-E350-4478-A86A-C83E5E660B45}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DCC55B89-E350-4478-A86A-C83E5E660B45}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DCC55B89-E350-4478-A86A-C83E5E660B45}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DCC55B89-E350-4478-A86A-C83E5E660B45}.Release|Any CPU.Build.0 = Release|Any CPU
+		{124FC5BC-C1EB-4D61-A435-4EFBFE3D37FC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{124FC5BC-C1EB-4D61-A435-4EFBFE3D37FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{124FC5BC-C1EB-4D61-A435-4EFBFE3D37FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{124FC5BC-C1EB-4D61-A435-4EFBFE3D37FC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{49E4A8F0-1ED3-4B4D-9846-9BDFEBBF3345}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{49E4A8F0-1ED3-4B4D-9846-9BDFEBBF3345}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{49E4A8F0-1ED3-4B4D-9846-9BDFEBBF3345}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{49E4A8F0-1ED3-4B4D-9846-9BDFEBBF3345}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{C8E022FB-3C97-498C-B5D4-BCCB70665663} = {237F8066-3B4E-4FDC-A9E2-CD83BF3FBBF0}
+		{DCC55B89-E350-4478-A86A-C83E5E660B45} = {237F8066-3B4E-4FDC-A9E2-CD83BF3FBBF0}
+		{124FC5BC-C1EB-4D61-A435-4EFBFE3D37FC} = {237F8066-3B4E-4FDC-A9E2-CD83BF3FBBF0}
+		{49E4A8F0-1ED3-4B4D-9846-9BDFEBBF3345} = {237F8066-3B4E-4FDC-A9E2-CD83BF3FBBF0}
+	EndGlobalSection
+EndGlobal

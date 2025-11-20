@@ -1,0 +1,83 @@
+services:
+    meetpoint.api:
+        container_name: meetpoint.api
+        build:
+            context: .
+            dockerfile: docker/dev.Dockerfile
+        expose:
+            - "8080"
+        volumes:
+            - ./wwwroot:/app/src/wwwroot
+        ports:
+            - "5001:8080"
+        environment:
+            - ASPNETCORE_ENVIRONMENT=Development
+        develop:
+            watch:
+                - action: sync
+                  path: ./src
+                  target: /app/src
+        networks:
+            - meetpoint-network
+
+    db:
+        image: postgres
+        container_name: meetpoint.db
+        ports:
+            - "5432:5432"
+        environment:
+            POSTGRES_PASSWORD: meetpass
+            POSTGRES_DB: meetpoint
+        volumes:
+            - pgdata:/var/lib/postgresql/data
+        restart: unless-stopped
+        networks:
+            - meetpoint-network
+
+    redis:
+        image: redis:7
+        container_name: redis
+        ports:
+            - "6379:6379"
+        volumes:
+            - redis_data:/data
+        networks:
+            - meetpoint-network
+
+    nginx:
+        build:
+            context: docker
+            dockerfile: nginx.Dockerfile
+        networks:
+            - meetpoint-network
+        volumes:
+            - ./wwwroot:/var/www/meetpoint/wwwroot
+        ports:
+            - "5000:80"
+        develop:
+            watch:
+                - action: sync+restart
+                  path: ./docker/nginx.conf
+                  target: /etc/nginx/nginx.conf
+
+    meetpoint.web:
+        build:
+            context: ./src/MeetPoint.Frontend
+            dockerfile: dev.Dockerfile
+        expose:
+            - "3000"
+        networks:
+            - meetpoint-network #change later
+        develop:
+            watch:
+                - action: sync
+                  path: ./src/MeetPoint.Frontend
+                  target: /app
+
+networks:
+    meetpoint-network:
+        driver: bridge
+
+volumes:
+    pgdata:
+    redis_data:

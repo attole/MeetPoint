@@ -1,0 +1,31 @@
+/*  Typography theme and related text style variants */
+
+@use "@angular/material" as mat;
+
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;700&display=swap");
+
+:root,
+:host {
+  @include mat.theme(
+    (
+      typography: "Open Sans, sans-serif",
+      density: 5,
+    )
+  );
+}
+
+.caption {
+  font: var(--mat-sys-label-small);
+}
+
+.display-large {
+  font: var(--mat-sys-display-large);
+}
+
+.display-medium {
+  font: var(--mat-sys-display-medium);
+}
+
+.display-small {
+  font: var(--mat-sys-display-small);
+}

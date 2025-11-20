@@ -1,0 +1,13 @@
+@use "dark-theme";
+@use "light-theme";
+@use "typography";
+@use "base";
+@use "global";
+@use "material-alike";
+@use "@angular/material" as mat;
+
+@include mat.core();
+
+/** {
+  outline: 1px solid red !important;
+}*/
